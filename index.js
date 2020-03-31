@@ -76,8 +76,14 @@ function temperatureCtoF(temp) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp, unit) {
+  const temps = temp * 9/5 + 32
+
+  if (unit === 'C') {
+    return `${Math.round(temps)}F`
+  } else {
+    return temp + "F"
+  }
 }
 
 
