@@ -144,8 +144,8 @@ function getName({name}) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(name) {
+  return name.indexOf('apple')
 }
 
 /**
@@ -163,8 +163,15 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple(names) {
+  const find = names.map(name => {
+    if (name === 'apple') {
+      return name = true
+    } else {
+      return name = false
+    }
+  })
+  return find
 }
 
 
